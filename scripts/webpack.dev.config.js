@@ -76,13 +76,6 @@ module.exports = {
             filename: 'index.html',
             template: getAbsPath('index.ejs')
         }),
-        // new webpack.DllReferencePlugin({
-        //     context: getAbsPath('.'),
-        //     manifest: require(getAbsPath('./dist/manifest.dll.dev.json'))
-        // }),
-        // new AddAssetHtmlPlugin({
-        //     filepath: getAbsPath('./dist/vendor.dll.js')
-        // }),
         new webpack.DefinePlugin({
             $NODE_ENV: JSON.stringify(process.env.NODE_ENV)
         })
